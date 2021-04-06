@@ -2,9 +2,15 @@
  * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
  */
 import LocalVerifiableCredentialStore from 'bedrock-local-vc-store';
-const dbName = 'bedrock-local-vc-store-test';
-const adapter = 'memory';
-const localVcStore = new LocalVerifiableCredentialStore({dbName, adapter});
+import PouchDB from 'pouchdb';
+import pouchFind from 'pouchdb-find';
+import pouchAdapter from 'pouchdb-adapter-memory';
+
+PouchDB.plugin(pouchFind);
+PouchDB.plugin(pouchAdapter);
+
+const db = new PouchDB('bedrock-local-vc-store-test', {adapter: 'memory'});
+const localVcStore = new LocalVerifiableCredentialStore({db});
 
 describe('local vc store API', () => {
   describe('some API', () => {
