@@ -2,7 +2,7 @@
  * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
  */
 import LocalVerifiableCredentialStore from 'bedrock-local-vc-store';
-const dbName = 'bedrock-local-vc-store-test'
+const dbName = 'bedrock-local-vc-store-test';
 const localVcStore = new LocalVerifiableCredentialStore({dbName});
 
 describe('local vc store API', () => {
