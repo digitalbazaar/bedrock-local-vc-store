@@ -1,11 +1,8 @@
 module.exports = {
   root: true,
-  extends: [
-    'eslint-config-digitalbazaar',
-    'eslint-config-digitalbazaar/jsdoc'
-  ],
   env: {
-    node: true
+    node: true,
   },
-  ignorePatterns: ['dist/']
+  extends: ['digitalbazaar'],
+  ignorePatterns: ['node_modules/']
 };

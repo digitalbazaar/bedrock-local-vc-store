@@ -1,15 +1,10 @@
-# Example Isomorphic JS Lib Template _(@digitalbazaar/isomorphic-js-lib-template)_
+# Bedrock Local Verifiable Credentials Store _(bedrock-local-vc-store)_
 
-[![Build status](https://img.shields.io/github/workflow/status/digitalbazaar/isomorphic-js-lib-template/Node.js%20CI)](https://github.com/digitalbazaar/isomorphic-js-lib-template/actions?query=workflow%3A%22Node.js+CI%22)
-[![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/isomorphic-js-lib-template)](https://codecov.io/gh/digitalbazaar/isomorphic-js-lib-template)
-[![NPM Version](https://img.shields.io/npm/v/@digitalbazaar/isomorphic-js-lib-template.svg)](https://npm.im/@digitalbazaar/isomorphic-js-lib-template)
-
-> A template skeleton repo for (non-Bedrock) JS libraries that run in Node.js and in the browser.
+> A Javascript library for locally storing Verifiable Credentials for Bedrock web apps
 
 ## Table of Contents
 
 - [Background](#background)
-- [Security](#security)
 - [Install](#install)
 - [Usage](#usage)
 - [Contribute](#contribute)
@@ -20,35 +15,31 @@
 
 TBD
 
-## Security
+See also (related specs):
 
-TBD
+* [Verifiable Credentials Data Model](https://w3c.github.io/vc-data-model/)
 
 ## Install
-
-- Node.js 12+ is required.
-
-### NPM
-
-To install via NPM:
-
-```
-npm install @digitalbazaar/isomorphic-js-lib-template
-```
-
-### Development
 
 To install locally (for development):
 
 ```
-git clone https://github.com/digitalbazaar/isomorphic-js-lib-template.git
-cd isomorphic-js-lib-template
+git clone https://github.com/digitalbazaar/bedrock-local-vc-store.git
+cd bedrock-local-vc-store
 npm install
 ```
 
 ## Usage
 
-TBD
+```js
+import LocalVerifiableCredentialStore from 'bedrock-local-vc-store';
+
+const dbName = 'example-db';
+const localVcStore = new LocalVerifiableCredentialStore({dbName});
+
+
+await localVcStore.insert({credential, meta});
+```
 
 ## Contribute
 
@@ -56,7 +47,7 @@ See [the contribute file](https://github.com/digitalbazaar/bedrock/blob/master/C
 
 PRs accepted.
 
-If editing the Readme, please conform to the
+Small note: If editing the Readme, please conform to the
 [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## Commercial Support
@@ -66,4 +57,4 @@ Digital Bazaar: support@digitalbazaar.com
 
 ## License
 
-[New BSD License (3-clause)](LICENSE) © Digital Bazaar
+[Bedrock Non-Commercial License v1.0](LICENSE.md) © Digital Bazaar
