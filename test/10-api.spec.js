@@ -1,18 +1,24 @@
 /*!
  * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
  */
-import chai from 'chai';
-chai.should();
-const {expect} = chai;
+import LocalVerifiableCredentialStore from 'bedrock-local-vc-store';
+const dbName = 'bedrock-local-vc-store-test'
+const localVcStore = new LocalVerifiableCredentialStore({dbName});
 
-import {Example} from '..';
-
-describe('Example', () => {
-  describe('constructor', () => {
-    it('should exist', async () => {
-      const ex = new Example();
-
-      expect(ex).to.exist;
-    });
-  });
+describe('local vc store API', () => {
+  describe('some API', () => {
+    describe('authenticated request', () => {
+      it('does something incorrectly', async () => {
+        let result;
+        let err;
+        try {
+          result = await localVcStore.get();
+        } catch(e) {
+          err = e;
+        }
+        should.not.exist(result);
+        should.exist(err);
+      });
+    }); // end authenticated request
+  }); // end create
 });
