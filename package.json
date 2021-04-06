@@ -4,8 +4,10 @@
   "description": "A Javascript library for locally storing Verifiable Credentials for Bedrock web apps.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "npm run test-karma",
+    "test": "npm run lint && npm run test-node && npm run test-karma",
+    "test-node": "mocha -r esm --preserve-symlinks -t 30000 -A -R ${REPORTER:-spec} --require tests/test-mocha.js tests/*.spec.js",
     "test-karma": "karma start karma.conf.js",
+    "test-watch": "mocha -r esm --watch --preserve-symlinks -t 30000 -A -R ${REPORTER:-spec} --require tests/test-mocha.js tests/*.spec.js",
     "coverage": "nyc --reporter=lcov --reporter=text-summary npm run test-node",
     "coverage-ci": "nyc --reporter=lcovonly npm run test-node",
     "coverage-report": "nyc report",
@@ -30,6 +32,7 @@
   ],
   "dependencies": {
     "pouchdb": "^7.2.2",
+    "pouchdb-adapter-memory": "^7.2.2",
     "pouchdb-find": "^7.2.2"
   },
   "keywords": [
