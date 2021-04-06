@@ -3,7 +3,8 @@
  */
 import LocalVerifiableCredentialStore from 'bedrock-local-vc-store';
 const dbName = 'bedrock-local-vc-store-test';
-const localVcStore = new LocalVerifiableCredentialStore({dbName});
+const adapter = 'memory';
+const localVcStore = new LocalVerifiableCredentialStore({dbName, adapter});
 
 describe('local vc store API', () => {
   describe('some API', () => {
