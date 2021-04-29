@@ -48,7 +48,7 @@
     "@babel/preset-env": "^7.4.3",
     "@babel/runtime": "^7.4.3",
     "babel-loader": "^8.0.5",
-    "bedrock-local-vc-store": "file:.",
+    "bedrock-web-local-vc-store": "file:.",
     "chai": "^4.3.4",
     "cross-env": "^6.0.3",
     "eslint": "^7.3.1",

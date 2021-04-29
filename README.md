@@ -1,4 +1,4 @@
-# Bedrock Local Verifiable Credentials Store _(bedrock-local-vc-store)_
+# Bedrock Local Verifiable Credentials Store _(bedrock-web-local-vc-store)_
 
 > A Javascript library for locally storing Verifiable Credentials for Bedrock web apps
 
@@ -32,7 +32,7 @@ npm install
 ## Usage
 
 ```js
-import LocalVerifiableCredentialStore from 'bedrock-local-vc-store';
+import {LocalVerifiableCredentialStore} from 'bedrock-web-local-vc-store';
 
 const dbName = 'example-db';
 const localVcStore = new LocalVerifiableCredentialStore({dbName});
