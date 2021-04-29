@@ -1,5 +1,5 @@
 {
-  "name": "bedrock-local-vc-store",
+  "name": "bedrock-web-local-vc-store",
   "version": "1.0.1-0",
   "description": "A Javascript library for locally storing Verifiable Credentials for Bedrock web apps.",
   "main": "lib/index.js",
@@ -13,7 +13,7 @@
     "coverage-report": "cross-env NODE_ENV=test nyc report",
     "lint": "eslint ."
   },
-  "homepage": "https://github.com/digitalbazaar/bedrock-local-vc-store",
+  "homepage": "https://github.com/digitalbazaar/bedrock-web-local-vc-store",
   "author": {
     "name": "Digital Bazaar, Inc.",
     "email": "support@digitalbazaar.com",
@@ -21,10 +21,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/bedrock-local-vc-store"
+    "url": "https://github.com/digitalbazaar/bedrock-web-local-vc-store"
   },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/bedrock-local-vc-store/issues",
+    "url": "https://github.com/digitalbazaar/bedrock-web-local-vc-store/issues",
     "email": "support@digitalbazaar.com"
   },
   "files": [
@@ -52,7 +52,8 @@
     "chai": "^4.3.4",
     "cross-env": "^6.0.3",
     "eslint": "^7.3.1",
-    "eslint-config-digitalbazaar": "^2.3.0",
+    "eslint-config-digitalbazaar": "^2.5.0",
+    "eslint-plugin-jsdoc": "^30.5.2",
     "esm": "^3.2.22",
     "karma": "^4.0.1",
     "karma-babel-preprocessor": "^8.0.0",
