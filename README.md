@@ -21,11 +21,23 @@ See also (related specs):
 
 ## Install
 
+- Node.js 12+ is required.
+
+### NPM
+
+To install via NPM:
+
+```
+npm install @digitalbazaar/bedrock-web-local-vc-store
+```
+
+### Development
+
 To install locally (for development):
 
 ```
-git clone https://github.com/digitalbazaar/bedrock-local-vc-store.git
-cd bedrock-local-vc-store
+git clone https://github.com/digitalbazaar/bedrock-web-local-vc-store.git
+cd bedrock-web-local-vc-store
 npm install
 ```
 
@@ -37,7 +49,6 @@ import {LocalVerifiableCredentialStore} from 'bedrock-web-local-vc-store';
 const dbName = 'example-db';
 const localVcStore = new LocalVerifiableCredentialStore({dbName});
 
-
 await localVcStore.insert({credential, meta});
 ```
 
@@ -47,7 +58,7 @@ See [the contribute file](https://github.com/digitalbazaar/bedrock/blob/master/C
 
 PRs accepted.
 
-Small note: If editing the Readme, please conform to the
+If editing the Readme, please conform to the
 [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## Commercial Support

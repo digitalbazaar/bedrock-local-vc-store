@@ -23,7 +23,7 @@ coverage
 *.lcov
 
 # local storage directory used for tests
-bedrock-local-vc-store-test*
+bedrock-web-local-vc-store-test*
 
 # nyc test coverage
 .nyc_output
