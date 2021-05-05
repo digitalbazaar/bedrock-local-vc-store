@@ -1,4 +1,4 @@
-# isomorphic-js-lib-template Changelog
+# bedrock-web-local-vc-store Changelog
 
 ## 1.0.0 - TBD
 
