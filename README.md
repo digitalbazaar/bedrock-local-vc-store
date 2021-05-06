@@ -28,7 +28,7 @@ See also (related specs):
 To install via NPM:
 
 ```
-npm install @digitalbazaar/bedrock-web-local-vc-store
+npm install bedrock-web-local-vc-store
 ```
 
 ### Development
