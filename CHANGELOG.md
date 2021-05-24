@@ -6,7 +6,7 @@
 - Adds `match` API.
 
 ### Changed
-- Updates `find` API params to accept `type`.
+- Updates `find` API to accept an optional `type` parameter.
 
 ## 1.0.0 - 2021-05-06
 
