@@ -1,5 +1,16 @@
 # bedrock-web-local-vc-store Changelog
 
+## 2.0.0 - TBD
+
+### Added
+- Adds `profileId` param to all functions.
+
+### Changed
+- Fixes issue with indexing.
+
+### Removed
+- **BREAKING**: Removed `profileId` param from constructor.
+
 ## 1.1.0 - 2021-05-28
 
 ### Added
