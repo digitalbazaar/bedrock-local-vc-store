@@ -1,6 +1,6 @@
 # bedrock-web-local-vc-store Changelog
 
-## 2.0.0 - TBD
+## 2.0.0 - 2021-06-10
 
 ### Added
 - Adds `profileId` param to all functions.
