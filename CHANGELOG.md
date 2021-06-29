@@ -1,5 +1,10 @@
 # bedrock-web-local-vc-store Changelog
 
+## 2.1.0 - 2021-TBD
+
+### Added
+- Add `meta.issuer` index field and fix `_query`.
+
 ## 2.0.0 - 2021-06-10
 
 ### Added
