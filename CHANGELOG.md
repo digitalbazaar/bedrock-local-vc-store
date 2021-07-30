@@ -1,5 +1,10 @@
 # bedrock-web-local-vc-store Changelog
 
+## 2.2.0 - 2021-07-30
+
+### Added
+- Add `content.type` param to `find()`.
+
 ## 2.1.0 - 2021-07-09
 
 ### Added
