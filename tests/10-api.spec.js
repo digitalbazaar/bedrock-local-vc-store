@@ -5,12 +5,17 @@ import {LocalVerifiableCredentialStore} from 'bedrock-web-local-vc-store';
 import PouchDB from 'pouchdb';
 import pouchFind from 'pouchdb-find';
 import pouchAdapter from 'pouchdb-adapter-memory';
+import {EdvClient} from 'edv-client';
 
 PouchDB.plugin(pouchFind);
 PouchDB.plugin(pouchAdapter);
 
 const db = new PouchDB('bedrock-web-local-vc-store-test', {adapter: 'memory'});
-const localVcStore = new LocalVerifiableCredentialStore({db});
+const profileId = '123456';
+const invocationSigner = null;
+const localVcStore = new LocalVerifiableCredentialStore({
+  db, edv: new EdvClient(), invocationSigner, profileId
+});
 
 describe('local vc store API', () => {
   describe('some API', () => {
