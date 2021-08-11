@@ -1,5 +1,15 @@
 # bedrock-web-local-vc-store Changelog
 
+## 3.0.0 - TBD
+
+### Added
+- **BREAKING**: Adds `edv`, `invocationSigner`, and `profileId` params to
+  constructor.
+- Added encryption to db entries.
+
+### Removed
+- **BREAKING**: Removed `profileId` param from all functions.
+
 ## 2.2.0 - 2021-07-30
 
 ### Added

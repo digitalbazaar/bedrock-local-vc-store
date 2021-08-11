@@ -1,5 +1,5 @@
 {
-  "name": "bedrock-web-vc-store-test",
+  "name": "bedrock-web-local-vc-store-test",
   "version": "0.0.1-0",
   "private": true,
   "scripts": {
@@ -24,6 +24,7 @@
     "edv-client": "^9.0.0",
     "isomorphic-webcrypto": "^2.3.8",
     "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
     "path-to-regexp": "^3.2.0",
     "route-params": "^0.2.0",
     "sinon": "^9.2.4",
