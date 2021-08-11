@@ -24,7 +24,6 @@
     "lib/"
   ],
   "dependencies": {
-    "edv-client": "^9.0.1",
     "p-map": "^4.0.0",
     "pouchdb": "^7.2.2",
     "pouchdb-find": "^7.2.2"
@@ -36,19 +35,10 @@
     "Linked Data"
   ],
   "devDependencies": {
-    "@babel/core": "^7.13.8",
-    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
-    "@babel/plugin-transform-runtime": "^7.13.9",
-    "@babel/preset-env": "^7.13.9",
-    "@babel/runtime": "^7.13.9",
-    "babel-loader": "^8.2.2",
-    "bedrock-web-local-vc-store": "file:.",
     "eslint": "^7.21.0",
     "eslint-config-digitalbazaar": "^2.6.1",
     "eslint-plugin-jsdoc": "^32.2.0",
-    "esm": "^3.2.22",
     "pouchdb-adapter-memory": "^7.2.2",
-    "pouchdb-debug": "^7.2.1",
-    "webpack": "^5.24.3"
+    "pouchdb-debug": "^7.2.1"
   }
 }
