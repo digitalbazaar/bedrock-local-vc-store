@@ -1,6 +1,6 @@
 # bedrock-web-local-vc-store Changelog
 
-## 3.0.0 - TBD
+## 3.0.0 - 2021-08-19
 
 ### Added
 - **BREAKING**: Adds `edv`, `invocationSigner`, and `profileId` params to
