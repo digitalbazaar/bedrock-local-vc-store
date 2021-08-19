@@ -33,11 +33,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: |
           npm install
-          cd tests
+          cd test
           npm install
       - name: Run test with Node.js ${{ matrix.node-version }}
         run: |
-          cd tests
+          cd test
           npm run test-node
   test-karma:
     runs-on: ubuntu-latest
@@ -54,11 +54,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: |
           npm install
-          cd tests
+          cd test
           npm install
-      - name: Run karma tests
+      - name: Run karma test
         run: |
-          cd tests
+          cd test
           npm run test-karma
   coverage:
     needs: [test-node, test-karma]
@@ -75,14 +75,14 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: |
           npm install
-          cd tests
+          cd test
           npm install
       - name: Generate coverage report
         run: |
-          cd tests
+          cd test
           npm run coverage-ci
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
         with:
-          file: ./tests/coverage/lcov.info
+          file: ./test/coverage/lcov.info
           fail_ci_if_error: true
