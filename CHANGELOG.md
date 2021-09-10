@@ -1,5 +1,10 @@
 # bedrock-web-local-vc-store Changelog
 
+## 3.0.1 - 2021-09-10
+
+### Fixed
+- Enable database compaction on pouchdb.
+
 ## 3.0.0 - 2021-08-19
 
 ### Added
